@@ -1,0 +1,30 @@
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+@import "../blocks/cell.scss";
+@import "../blocks/pawn/pawn.scss";
+
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+.container {
+  display: block;
+  margin-left: 50%;
+  margin-top: 50vh;
+  transform: translate(-50%, -50%);
+
+  width: 1000px;
+  height: 600px;
+  border: 1px solid #999999;
+  background-color: #eeeeee;
+}
+
+.game-window {
+  display: flex;
+}

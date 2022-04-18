@@ -1,0 +1,110 @@
+.hide {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
+  position: relative;
+
+  &--nav {
+    padding: 0;
+  }
+}
+
+// @media (min-width: $tablet-width) {
+//   .container {
+//     padding: 0 50px;
+
+//     &--fill {
+//       padding: 20px 50px;
+
+//       &::before {
+//         content: "";
+//         display: block;
+//         position: absolute;
+//         width: 200vw;
+//         height: 100%;
+//         left: -50%;
+//         top: 0;
+//         background-color: $title-bg;
+//       }
+//     }
+//   }
+// }
+
+div,
+h1,
+h2,
+h3,
+button,
+p,
+span,
+a,
+ul,
+li,
+ol,
+section,
+aside,
+header,
+footer {
+  display: block;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid rgba(255, 200, 0, 0.3);
+    background-color: rgba(255, 200, 0, 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0;
+
+    &--fill {
+      padding: 20px 50px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 200vw;
+        height: 100%;
+        left: -50%;
+        top: 0;
+        background-color: red;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    &--fill {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    &--fill {
+      padding: 0 50px;
+    }
+  }
+}
