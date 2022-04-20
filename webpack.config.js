@@ -6,6 +6,9 @@ module.exports = {
   mode: 'development',
   watch: true,
   devtool: 'source-map',
+  // devServer: {
+  //   contentBase: './dist'
+  // },
   entry: {
     main: path.resolve(__dirname, './src/js/index.js'),
   },
@@ -30,7 +33,7 @@ module.exports = {
       },
       // изображения
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|tif)$/i,
         type: 'asset/resource',
       },
       // шрифты и SVG

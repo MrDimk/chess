@@ -35,8 +35,7 @@ class Figure {
   }
 }
 
-const p1 = new Figure('pawn', 'red');
-console.log(p1);
-p1.appendTo(document.querySelector('.cell'));
-p1.element.insertAdjacentHTML('beforeend', TYPES.pawn);
-// console.log(TYPES.pawn);
+// const p1 = new Figure('pawn', 'red');
+// console.log(p1);
+// p1.appendTo(document.querySelector('.cell'));
+// p1.element.insertAdjacentHTML('beforeend', TYPES.pawn);

@@ -14,14 +14,14 @@
   <div class="container">
     <main class="game-window">
       <section class="game-log"></section>
-      <div class="game">
+      <section class="game">
         <nav class="game__navigation">
-          <button class="game__menu-button"></button>
           <ul class="game__menu">
             <li></li>
             <li></li>
             <li></li>
           </ul>
+          <button class="game__menu-button"></button>
         </nav>
         <div class="game__timer"></div>
         <ul class="game__board">
@@ -90,11 +90,36 @@
           <li class="game__board-cell"></li>
           <li class="game__board-cell"></li>
         </ul>
-      </div>
+        <ul class="game__controls">
+          <li class="game__controls-item"></li>
+          <li class="game__controls-item"></li>
+        </ul>
+      </section>
+      <section class="game-chat">
+        <div class="game-chat__top">
+          <ul class="game-chat__user-menu user-menu">
+            <li class="user-menu__item"></li>
+          </ul>
+          <h3 class="game-chat__nickname">Dimk!</h3>
+          <div class="game-chat__avatar"></div>
+        </div>
+        <div class="game-chat__messages">
+          <ul class="messages__list">
+            <li class="messages__item right-message"> hi! =)</li>
+            <li class="messages__item left-message">привет!</li>
+            <li class="messages__item right-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+              soluta.</li>
+          </ul>
+        </div>
+        <div class="game-chat__form">
+          <form action="" class="chat-form">
+            <input type="text" class="message-input" name="message" id="message-field">
+            </label>
+            <button class="send-button">></button>
+          </form>
+        </div>
+      </section>
     </main>
-    <!-- <div class="game-field"></div> -->
-    <div class="cell">
-    </div>
   </div>
   </div>
 </body>
