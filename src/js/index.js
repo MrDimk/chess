@@ -1,6 +1,12 @@
 import '../scss/main.scss';
-import '../blocks/pawn/pawn.js';
+import '../blocks/figures/pawn.js';
+// import '../blocks/board/board.js';
 import { startTimer } from './utils.js';
+import {CONFIG, Board} from "../blocks/board/board";
 
+const gameBoardContainer = document.querySelector('.game');
 console.log('its alive!');
-// startTimer(3333);
+
+const board = new Board(CONFIG);
+gameBoardContainer.append(board.renderInDOM());
+

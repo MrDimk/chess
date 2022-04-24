@@ -4,8 +4,8 @@
 @import "mixins.scss";
 @import "scaffolding.scss";
 
-@import "../blocks/cell.scss";
-@import "../blocks/pawn/pawn.scss";
+@import "../blocks/board/board.scss";
+@import "../blocks/figures/pawn.scss";
 
 
 html {
@@ -106,32 +106,42 @@ html {
 .game__board {
   box-sizing: border-box;
   padding: 0;
-  margin: 30px auto;
-  width: 360px;
-  height: 360px;
+  margin: auto;
+  width: 415px;
+  height: 415px;
+  border: 15px solid #e3e3e3;
 
-  background-color: #fff;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  //display: grid;
+  //grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  //grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.game__board-cell {
+
+.game__controls {
+  display: flex;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #e3e3e3;
+  height: 40px;
+  justify-content: center;
 }
 
-.game__controls {
-  display: block;
-  padding: 0;
-  margin: 10px;
-  box-sizing: border-box;
-  height: 40px;
-  background-color: #fff;
+.game__controls-item {
+  margin: auto 5px;
+  padding: 2px 0;
+  width: 30px;
+  height: 20px;
+  border: 2px solid #e3e3e3;
+  border-radius: 10px;
+  font-size: 10px;
+  font-style: bold;
+  color: #666666;
+  text-align: center;
+  vertical-align: bottom;
+
+  &:hover {
+    background-color: #e3e3e3;
+  }
 }
 
 .game-chat {
